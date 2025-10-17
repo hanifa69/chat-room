@@ -26,9 +26,7 @@ def main():
             try:
                 message= input()
                 s.sendall(message.encode())
-            #except KeyboardInterrupt:
-             #   print("Interrupted by user")
-              #  break
+            
             except Exception as e:
                 print(f"Error sending message: {e}")
                 break

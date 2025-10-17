@@ -21,7 +21,7 @@ def connection(conn):
                 if not message:
                     break
                 if message =="list":
-                    message= user_names
+                    message=', '.join(user_names) 
                 send(user_name,message, conn)
             except:
                 break
