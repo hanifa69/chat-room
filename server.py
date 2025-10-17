@@ -23,7 +23,7 @@ def send (user_name,message,conn):
             if client != conn:
                 messages=user_name+message
                 print(messages)
-                conn.sendall(messages.encode())
+                client.sendall(messages.encode())
         except:
             print("eror")    
 def many():
